@@ -51,7 +51,7 @@
 
 - 素材用 07th Mod 的 PS3 高清立绘 / 背景 / 语音 / BGM
 - 文本用 ycx-Studios 的简体中文汉化
-- 引擎基于 darwin07 的安卓 Ren'Py 移植版
+- 引擎基于 [darwin07 的安卓 Ren'Py 移植版](https://darwin07tachibana.blogspot.com/)
 - 最终产出**两个独立 APK**，装上即玩，不需要额外下载资源、不需要联网
 
 出题篇（第 1-4 章）：鬼隐篇、绵流篇、祟杀篇、暇溃篇
@@ -203,7 +203,7 @@
 | 组件 | 版本 / 说明 |
 |---|---|
 | 引擎 | Ren'Py 7.3.5.606（Python 2.7） |
-| 基础移植包 | darwin07 的安卓移植（`higurashi_android_118.apk` / `higu-kai-android-204.apk`） |
+| 基础移植包 | [darwin07](https://darwin07tachibana.blogspot.com/) 的安卓移植（`higurashi_android_118.apk` / `higu-kai-android-204.apk`） |
 | 反编译 | unrpyc 2.0.3（`.rpyc` → `.rpy`） |
 | 签名 | uber-apk-signer 1.3.0（v1 + v2 + v3） |
 | 字体 | Noto Sans CJK SC / Noto Serif CJK SC |
@@ -242,7 +242,7 @@
 | 项目 | 用途 | 许可 |
 |---|---|---|
 | [Ren'Py](https://www.renpy.org/) 7.3.5 | 视觉小说引擎（本项目的运行时） | MIT |
-| **darwin07** 的 Ren'Py 安卓移植 | **基础 APK**（`higurashi_android_118.apk` / `higu-kai-android-204.apk`，包名 `com.ps3.higurashi`）。原始安卓工程、脚本结构、`.rpy` 框架、安卓打包配置全部来自此移植包 | ⚠️ **来源不明**——未能在 GitHub 或其他公开代码托管平台找到该移植版的官方仓库；本项目是从现成的成品 APK 反向工程而来。若你知道原作者主页，欢迎提 issue 补充 |
+| **[darwin07](https://darwin07tachibana.blogspot.com/)** 的 Ren'Py 安卓移植 | **基础 APK**（`higurashi_android_118.apk` / `higu-kai-android-204.apk`，包名 `com.ps3.higurashi`）。原始安卓工程、脚本结构、`.rpy` 框架、安卓打包配置全部来自此移植包 | 非 GitHub 项目，为作者自建的 Blog 发布页：[darwin07's unofficial Android ports](https://darwin07tachibana.blogspot.com/)（提供 Higurashi 本篇 / Kai / Rei 三部移植） |
 | [unrpyc](https://github.com/CensoredUsername/unrpyc) 2.0.3 | `.rpyc` 反编译（用于对照原移植包源码、回填丢失标签） | MIT |
 
 ### 素材 / 文本
@@ -333,7 +333,7 @@ higurashi-android-chinese-port/
 
 ## 构建流程
 
-> 需要自行准备：Steam 正版游戏、07th Mod 素材包、ycx 汉化补丁、darwin07 的移植 APK、Ren'Py 7.3.5 SDK。
+> 需要自行准备：Steam 正版游戏、07th Mod 素材包、ycx 汉化补丁、[darwin07 的移植 APK](https://darwin07tachibana.blogspot.com/)（本篇 + Kai 两个包）、Ren'Py 7.3.5 SDK。
 
 ```bash
 # 1. 提取三语语料
@@ -381,7 +381,7 @@ python src/scripts/build_apk.py \
 - **请勿公开分发成品 APK**。若要分发，请自行购买正版游戏并遵守各素材来源的授权条款。
 - 游戏剧本、美术、音乐、语音的著作权归 **07th Expansion** 及各权利人所有。
 - 本仓库中的**移植管线源码**以 MIT 协议开源，可自由参考、修改、复用。
-- 感谢 darwin07 的安卓移植、07th Mod 的高清素材与语音整合、ycx-Studios 的简体中文汉化。
+- 感谢 [darwin07](https://darwin07tachibana.blogspot.com/) 的安卓移植、07th Mod 的高清素材与语音整合、ycx-Studios 的简体中文汉化。
 
 ---
 
@@ -390,7 +390,7 @@ python src/scripts/build_apk.py \
 - **07th Expansion** — 原作的创作者
 - **[07th Mod](https://07th-mod.com/)** — PS3 高清素材、语音整合、OP 动画
 - **[ycx-Studios](https://github.com/ycx-Studios)** — 简体中文汉化补丁与官方术语表（[汉化补丁官网](https://github.com/ycx-Studios/higurashi-docs)）
-- **darwin07** — Ren'Py 安卓移植基础（来源不明的成品 APK，非 GitHub 项目）
+- **[darwin07](https://darwin07tachibana.blogspot.com/)** — Ren'Py 安卓移植基础（[unofficial Android ports](https://darwin07tachibana.blogspot.com/) 发布页）
 - **Ren'Py**、**unrpyc**、**uber-apk-signer**、**FFmpeg**、**Noto CJK** — 本次使用的开源工具链
 
 ---
