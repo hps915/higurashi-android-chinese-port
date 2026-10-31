@@ -242,7 +242,7 @@
 | 项目 | 用途 | 许可 |
 |---|---|---|
 | [Ren'Py](https://www.renpy.org/) 7.3.5 | 视觉小说引擎（本项目的运行时） | MIT |
-| [darwin07](https://github.com/darwinchok/renpy-android-for-higurashi) 的 Ren'Py 安卓移植 | **基础 APK**。原始安卓工程、脚本结构、`.rpy` 框架、安卓打包配置全部来自此项目 | 见上游仓库 |
+| **darwin07** 的 Ren'Py 安卓移植 | **基础 APK**（`higurashi_android_118.apk` / `higu-kai-android-204.apk`，包名 `com.ps3.higurashi`）。原始安卓工程、脚本结构、`.rpy` 框架、安卓打包配置全部来自此移植包 | ⚠️ **来源不明**——未能在 GitHub 或其他公开代码托管平台找到该移植版的官方仓库；本项目是从现成的成品 APK 反向工程而来。若你知道原作者主页，欢迎提 issue 补充 |
 | [unrpyc](https://github.com/CensoredUsername/unrpyc) 2.0.3 | `.rpyc` 反编译（用于对照原移植包源码、回填丢失标签） | MIT |
 
 ### 素材 / 文本
@@ -250,7 +250,7 @@
 | 资源 | 用途 | 说明 |
 |---|---|---|
 | [07th Mod](https://07th-mod.com/) | PS3 高清立绘、背景、CG、OP 动画、PS3 语音、BGM/SE | 社区维护的高清素材整合 |
-| [ycx-Studios](https://github.com/ycx-Studios) 简体中文汉化补丁 | 全部剧情中文文本、官方中文 Tips 标题 | 汉化补丁 DLL 内亦含官方术语表 |
+| [ycx-Studios](https://github.com/ycx-Studios) 简体中文汉化补丁 | 全部剧情中文文本、官方中文 Tips 标题 | [官网仓库](https://github.com/ycx-Studios/higurashi-docs) / [资源库](https://github.com/ycx-Studios/higurashi-assembly)；汉化补丁 DLL 内亦含官方术语表 |
 | 07th Expansion 原作 | 剧本、美术、音乐的著作权方 | 见「合规与授权」 |
 
 ### 工具库
@@ -389,8 +389,8 @@ python src/scripts/build_apk.py \
 
 - **07th Expansion** — 原作的创作者
 - **[07th Mod](https://07th-mod.com/)** — PS3 高清素材、语音整合、OP 动画
-- **[ycx-Studios](https://github.com/ycx-Studios)** — 简体中文汉化补丁与官方术语表
-- **[darwin07](https://github.com/darwinchok/renpy-android-for-higurashi)** — Ren'Py 安卓移植基础
+- **[ycx-Studios](https://github.com/ycx-Studios)** — 简体中文汉化补丁与官方术语表（[汉化补丁官网](https://github.com/ycx-Studios/higurashi-docs)）
+- **darwin07** — Ren'Py 安卓移植基础（来源不明的成品 APK，非 GitHub 项目）
 - **Ren'Py**、**unrpyc**、**uber-apk-signer**、**FFmpeg**、**Noto CJK** — 本次使用的开源工具链
 
 ---
