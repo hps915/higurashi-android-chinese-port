@@ -1,0 +1,52 @@
+# 游戏素材与成品（不纳入版本控制）
+*.apk
+*.obb
+*.aab
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.ogg
+*.mp3
+*.wav
+*.ogv
+*.mp4
+*.ttf
+*.otf
+
+# Ren'Py 工程产物
+*.rpyc
+*.rpyb
+*.rpymc
+cache/
+saves/
+log.txt
+errors.txt
+traceback.txt
+script_version.txt
+
+# 语料与中间数据
+work/corpus/
+*.json
+!docs/*.json
+
+# 解包产物
+apk_q/
+apk_k/
+downloads/
+output/
+_tmp_*/
+audit_*/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
